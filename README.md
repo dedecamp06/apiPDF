@@ -6,12 +6,12 @@
 
   
 
-##### Versão 1.0.0
+### Versão 1.0.0
 
 
-## Descrição
+# Descrição
 
-API que recebe um JSON como objeto e retorna uma leitura de EJS ou PDF conforme necessidade.
+API que recebe um JSON como objeto dentro do body e trata esses dados dentro de um arquivo de leitura e retorna um arquivo de EJS ou PDF escolha do usuario.
 
 Principais Tecnologias utilizadas:
 
@@ -22,7 +22,7 @@ Principais Tecnologias utilizadas:
 - REST
 
 
-## Exemplo de body
+# Exemplo de body
 >  { 
     "doc": 
 	[
@@ -36,10 +36,10 @@ Principais Tecnologias utilizadas:
         "cidade": "teste",
 			  "comissao": 5501
     } 
-    ]
-    }
+		]
+}
 
-## Retorno Endpoints
+# Retorno Endpoints
 
 
 > **/pdf** : Resposta [200]<ok> - post.
