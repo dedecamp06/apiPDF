@@ -2,10 +2,9 @@ const ejs = require('ejs');
 const { resolve } = require('path')
 
 class pdfService{
-    async gerarPDF(numeros){
-        console.log("nuemros", numeros)
+    async gerarPDF(doc){
         try {
-           const response = ejs.renderFile(resolve(__dirname, '..', 'public', 'pdf.ejs'),{numeros})
+           const response = ejs.renderFile(resolve(__dirname, '..', 'public', 'pdf.ejs'),{doc})
             return response;  
             
         } catch (error) {
