@@ -11,7 +11,7 @@
 
 ## Descrição
 
-Com a dificuldade..
+Criação de uma API que recebe um JSON como objeto e retorna uma leitura de EJS ou PDF conforme necessidade.
 
 Principais Tecnologias utilizadas:
 
@@ -22,13 +22,9 @@ Principais Tecnologias utilizadas:
 - REST
 
 
-## Publicação
-
-publi.
-
 
 ## Retorno Endpoints
 
 
-> **/pdf** : Resposta [200]<ok> - Lista de Associados e Produto.
+> **/pdf** : Resposta [200]<ok> - post.
 
