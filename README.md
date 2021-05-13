@@ -43,7 +43,5 @@ Principais Tecnologias utilizadas:
 
 
 > **/pdf** : Resposta [200]<ok> - post.
-> 
-![image](https://user-images.githubusercontent.com/16025244/118169418-4c1e0400-b3ff-11eb-8f8f-964d0b61780e.png)
 
 
