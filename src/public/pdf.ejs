@@ -1,0 +1,115 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta name="format-detection" content="telephone=no" />
+  <style>
+    .tabela {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 40%;
+      height: auto;
+      margin-left: 10%;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      height: auto;
+      width: auto;
+    }
+
+    /* Layout em Grid */
+
+    body,
+    html {
+      margin: 0;
+      background: white;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 96%;
+    }
+    
+
+    h1 {
+      margin: 40px 0 20px 0;
+      width: 100%;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media print {
+      * {
+        -webkit-print-color-adjust: exact;
+      }
+
+      .no-print,
+      .no-print * {
+        display: none !important;
+      }
+
+      @page {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .capitalize {
+      text-transform: capitalize !important;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <table class="w666 no-print" style="size: 5px">
+    <tr class="cpN">
+      <td class="At Ac">Instruções de Impressão</td>
+    </tr>
+    <tr class="ti">
+      <td class="At Ac">Imprimir em impressora jato de tinta (ink jet) ou laser em qualidade normal. (Não use modo
+        econômico).<br>Utilize folha A4 (210 x 297 mm) ou Carta (216 x 279 mm) - Corte na linha indicada<br></td>
+    </tr>
+    <tr class="ti">
+      <td class="At Ac">
+        <br />
+        <form>
+          <input class="no-print" type="button" value="Clique aqui para imprimir"
+            onclick="window.print();return false;" />
+        </form>
+      </td>
+    </tr>
+  </table><br />
+  <div>
+    <table>
+      <% numeros.forEach(function(post){ %>
+    <tr>
+      <th>Rua</th>
+      <th>Cidade</th>
+      <th>Comissao</th>
+    </tr>
+    <tr>
+     <td><%= post.rua %></td>
+     <td><%= post.cidade %></td>
+     <td><%= post.comissao %></td>
+       <% }) %></h2>
+    </tr>
+  </table>
+</div>
+</html>
